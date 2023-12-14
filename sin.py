@@ -2,7 +2,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 
-# difine wave
+# define wave
 amp  = 1    # Amplitude
 freq = 1    # Frequency [Hz(=回/sec)]
 time = 1    # Time [sec]
