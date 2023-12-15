@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 # define wave
 amp  = 1    # Amplitude
-freq = 1    # Frequency [Hz(=回/sec)]
+freq = 1    # Frequency [Hz]
 time = 1    # Time [sec]
-fs   = 880  # Sampling frequency [Samples/sec]
+fs   = 880  # Sampling frequency [Hz]
 
 tr   = [0, 2*math.pi*freq*time]                    # time range
 tv   = np.linspace(0,2*math.pi*freq*time,time*fs)  # time vector
@@ -24,7 +24,7 @@ ax.plot(tv,y,color="red")   # sin
 ax.set_xlim(tr[0], tr[1])
 ax.set_ylim(yr[0]*1.1, yr[1]*1.1)
 
-plt.xlabel('time', fontsize=9)
+plt.xlabel('Phase [rad]', fontsize=9)
 plt.ylabel('y', fontsize=9)
 
 ax.text(0,amp,"Amplitude",size=10.5,color='gray')
