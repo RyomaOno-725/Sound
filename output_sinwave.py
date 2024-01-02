@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import colorsys as clrsys
 from PIL import Image
-import os
 
 # define
 radius = 1
